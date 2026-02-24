@@ -44,7 +44,7 @@
     --shadow-gold: 0 4px 24px rgba(184, 146, 47, 0.15);
     --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    --font-heading: 'Outfit', sans-serif;
+    --font-heading: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
     --max-w: 1200px;
 }

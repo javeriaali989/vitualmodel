@@ -6,35 +6,41 @@
 .comparison-slider {
     position: relative;
     width: 100%;
-    aspect-ratio: 16/10;
     border-radius: var(--radius-lg);
     overflow: hidden;
     cursor: col-resize;
     border: 1px solid var(--border);
     user-select: none;
+    /* Height will be determined by the image inside */
 }
 
 .comparison-slider .img-layer {
-    position: absolute;
-    inset: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.comparison-slider .img-layer img,
-.comparison-slider .img-layer .placeholder-img {
+.comparison-slider .img-layer img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    /* Ensures the whole image is visible */
 }
 
 .comparison-slider .before-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     z-index: 1;
     clip-path: inset(0 50% 0 0);
 }
 
 .comparison-slider .after-layer {
+    position: relative;
     z-index: 0;
 }
 
@@ -71,27 +77,30 @@
 
 .comparison-slider .label {
     position: absolute;
-    top: 16px;
+    top: 20px;
     z-index: 11;
-    padding: 6px 16px;
+    padding: 8px 18px;
     border-radius: var(--radius-full);
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .comparison-slider .label-before {
-    left: 16px;
-    background: rgba(239, 68, 68, 0.85);
-    color: #fff;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #1a1a2e;
 }
 
 .comparison-slider .label-after {
-    right: 16px;
-    background: rgba(34, 197, 94, 0.85);
+    right: 20px;
+    background: linear-gradient(135deg, rgba(184, 146, 47, 0.9), rgba(212, 173, 74, 0.9));
     color: #fff;
+    border-color: rgba(184, 146, 47, 0.3);
 }
 
 /* === Before/After Side-by-Side Cards === */
