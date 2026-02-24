@@ -236,11 +236,13 @@
 }
 
 .placeholder-img.before-ph {
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    background: linear-gradient(135deg, #e8e0d4, #d4cdc0);
+    color: rgba(0, 0, 0, 0.45);
 }
 
 .placeholder-img.after-ph {
-    background: linear-gradient(135deg, #0f3433, #1a3a2a);
+    background: linear-gradient(135deg, #d4e6d8, #c0d9c6);
+    color: rgba(0, 0, 0, 0.45);
 }
 
 /* === Category Filter Tabs === */
@@ -272,7 +274,7 @@
 
 .filter-tab.active {
     background: linear-gradient(135deg, var(--gold), var(--gold-light));
-    color: var(--bg-dark);
+    color: #fff;
     border-color: transparent;
     box-shadow: var(--shadow-gold);
 }
@@ -370,7 +372,7 @@
     height: 80px;
     margin: 0 auto 20px;
     border-radius: 50%;
-    background: var(--bg-dark-2);
+    background: #fff;
     border: 2px solid var(--gold);
     display: flex;
     align-items: center;
@@ -452,6 +454,7 @@
 .pricing-card .badge {
     position: absolute;
     top: -12px;
+    color: #fff;
     left: 50%;
     transform: translateX(-50%);
     padding: 6px 18px;

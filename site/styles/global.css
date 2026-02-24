@@ -13,35 +13,35 @@
 
 /* --- Custom Properties --- */
 :root {
-    --bg-dark: #0a0f1c;
-    --bg-dark-2: #101828;
-    --bg-section: #0d1322;
-    --bg-card: rgba(255, 255, 255, 0.04);
-    --bg-card-hover: rgba(255, 255, 255, 0.08);
-    --glass: rgba(10, 15, 28, 0.72);
-    --gold: #c9a55a;
-    --gold-light: #e4cc8a;
-    --gold-glow: rgba(201, 165, 90, 0.25);
-    --white: #f8f8f8;
-    --white-60: rgba(248, 248, 248, 0.6);
-    --white-40: rgba(248, 248, 248, 0.4);
-    --white-20: rgba(248, 248, 248, 0.2);
-    --white-10: rgba(248, 248, 248, 0.1);
-    --white-05: rgba(248, 248, 248, 0.05);
-    --accent-teal: #2dd4bf;
-    --accent-rose: #f472b6;
-    --danger: #ef4444;
-    --border: rgba(248, 248, 248, 0.08);
-    --border-gold: rgba(201, 165, 90, 0.3);
+    --bg-dark: #ffffff;
+    --bg-dark-2: #f5f5f7;
+    --bg-section: #fafafa;
+    --bg-card: rgba(0, 0, 0, 0.02);
+    --bg-card-hover: rgba(0, 0, 0, 0.05);
+    --glass: rgba(255, 255, 255, 0.85);
+    --gold: #b8922f;
+    --gold-light: #d4ad4a;
+    --gold-glow: rgba(184, 146, 47, 0.2);
+    --white: #1a1a2e;
+    --white-60: rgba(26, 26, 46, 0.65);
+    --white-40: rgba(26, 26, 46, 0.45);
+    --white-20: rgba(26, 26, 46, 0.2);
+    --white-10: rgba(26, 26, 46, 0.08);
+    --white-05: rgba(26, 26, 46, 0.04);
+    --accent-teal: #0d9488;
+    --accent-rose: #db2777;
+    --danger: #dc2626;
+    --border: rgba(0, 0, 0, 0.1);
+    --border-gold: rgba(184, 146, 47, 0.35);
     --radius-sm: 8px;
     --radius-md: 14px;
     --radius-lg: 22px;
     --radius-xl: 32px;
     --radius-full: 999px;
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
-    --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.3);
-    --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.4);
-    --shadow-gold: 0 4px 24px rgba(201, 165, 90, 0.2);
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.1);
+    --shadow-gold: 0 4px 24px rgba(184, 146, 47, 0.15);
     --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     --font-heading: 'Outfit', sans-serif;
@@ -114,7 +114,7 @@ h6 {
 
 .btn-primary {
     background: linear-gradient(135deg, var(--gold), var(--gold-light));
-    color: var(--bg-dark);
+    color: #fff;
     box-shadow: var(--shadow-gold);
 }
 
@@ -235,9 +235,10 @@ h6 {
 }
 
 .navbar.scrolled {
-    background: rgba(10, 15, 28, 0.92);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
 }
 
 .navbar .container {
@@ -416,11 +417,11 @@ h6 {
 }
 
 .bg-orb-gold {
-    background: rgba(201, 165, 90, 0.15);
+    background: rgba(184, 146, 47, 0.08);
 }
 
 .bg-orb-teal {
-    background: rgba(45, 212, 191, 0.1);
+    background: rgba(13, 148, 136, 0.06);
 }
 
 .bg-orb-rose {
@@ -455,7 +456,7 @@ h6 {
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(10, 15, 28, 0.97);
+        background: rgba(255, 255, 255, 0.98);
         backdrop-filter: blur(20px);
         padding: 40px;
         gap: 24px;
