@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact VirtualModel — Start Your AI Modeling Project</title>
+    <meta name="description"
+        content="Get in touch with VirtualModel to start your AI virtual dress modeling project. Request a free sample or get a custom quote for your fashion brand." />
+    <link rel="canonical" href="https://virtualmodel.us/contact" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/pages.css" />
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">Virtual<span>Model</span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="catalog.html">Catalog</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+            <div class="nav-cta"><a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a></div>
+            <button class="nav-toggle" aria-label="Toggle menu"
+                aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO -->
+        <section class="page-hero section">
+            <div class="bg-orb bg-orb-gold" style="width:400px;height:400px;top:-150px;left:-60px;"></div>
+            <div class="container">
+                <p class="eyebrow">Contact Us</p>
+                <h1>Let's Transform Your Product Images</h1>
+                <p>Ready to see what AI virtual dress modeling can do for your brand? Send us a message and we'll get
+                    back to you within 24 hours with a custom plan.</p>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="section">
+            <div class="container">
+                <div class="contact-layout reveal">
+
+                    <!-- FORM -->
+                    <div class="contact-form">
+                        <h2 style="margin-bottom: 8px;">Send Us a Message</h2>
+                        <p style="color: var(--white-40); margin-bottom: 28px; font-size: 0.92rem;">Fill out the form
+                            and our team will respond within 24 hours. For urgent inquiries, email us directly.</p>
+
+                        <form id="contactForm" onsubmit="handleSubmit(event)">
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required placeholder="John" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required placeholder="Smith" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Business Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="john@yourbrand.com" />
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company / Brand Name</label>
+                                <input type="text" id="company" name="company" placeholder="Your Fashion Brand" />
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Needed</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service...</option>
+                                    <option value="jewelry">Jewelry Modeling</option>
+                                    <option value="footwear">Footwear Modeling</option>
+                                    <option value="fashionwear">Fashionwear Modeling</option>
+                                    <option value="eyewear">Eyewear Modeling</option>
+                                    <option value="multiple">Multiple Categories</option>
+                                    <option value="other">Other / Custom</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="volume">Estimated Image Volume</label>
+                                <select id="volume" name="volume">
+                                    <option value="">Select volume...</option>
+                                    <option value="1-10">1–10 images</option>
+                                    <option value="11-30">11–30 images</option>
+                                    <option value="31-100">31–100 images</option>
+                                    <option value="100+">100+ images</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message"
+                                    placeholder="Tell us about your project, timeline, and any specific requirements..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Send
+                                Message</button>
+                        </form>
+
+                        <div id="formSuccess"
+                            style="display:none; margin-top: 20px; padding: 20px; border-radius: var(--radius-md); background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.3); text-align: center;">
+                            <p style="color: #22c55e; font-weight: 600; margin: 0;">✓ Message sent! We'll get back to
+                                you within 24 hours.</p>
+                        </div>
+                    </div>
+
+                    <!-- INFO SIDEBAR -->
+                    <div class="contact-info">
+                        <div class="contact-info-card">
+                            <h4>📧 Email</h4>
+                            <p><a href="mailto:hello@virtualmodel.us"
+                                    style="color: var(--gold);">hello@virtualmodel.us</a></p>
+                        </div>
+                        <div class="contact-info-card">
+                            <h4>⏱️ Response Time</h4>
+                            <p>We respond to all inquiries within 24 hours during business days. Urgent requests are
+                                prioritized.</p>
+                        </div>
+                        <div class="contact-info-card">
+                            <h4>🎁 Free Sample</h4>
+                            <p>Send us 1–2 product images and we'll create a free sample transformation so you can
+                                evaluate our quality before committing.</p>
+                        </div>
+                        <div class="contact-info-card">
+                            <h4>🌍 Serving Worldwide</h4>
+                            <p>We work with boutiques and fashion brands globally. Everything is handled digitally — no
+                                shipping required.</p>
+                        </div>
+
+                        <!-- Trust Badges -->
+                        <div class="trust-badges">
+                            <div class="trust-badge">
+                                <div class="trust-icon">🔒</div>
+                                <p>Secure file handling</p>
+                            </div>
+                            <div class="trust-badge">
+                                <div class="trust-icon">⚡</div>
+                                <p>48h turnaround</p>
+                            </div>
+                            <div class="trust-badge">
+                                <div class="trust-icon">✅</div>
+                                <p>Satisfaction guarantee</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section" style="background: var(--bg-dark-2);">
+            <div class="container">
+                <div class="cta-banner reveal">
+                    <p class="eyebrow">Prefer to Browse First?</p>
+                    <h2>See Our Before & After Portfolio</h2>
+                    <p>Check out our catalog of virtual dress modeling transformations across jewelry, footwear,
+                        fashionwear, and eyewear.</p>
+                    <a href="catalog.html" class="btn btn-primary btn-lg">Browse Catalog</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">Virtual<span>Model</span></a>
+                    <p>AI-powered virtual dress modeling service helping boutiques and fashion brands transform product
+                        images into campaign-ready model visuals.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <a href="catalog.html#jewelry">Jewelry Modeling</a>
+                    <a href="catalog.html#footwear">Footwear Modeling</a>
+                    <a href="catalog.html#fashionwear">Fashionwear Modeling</a>
+                    <a href="catalog.html#eyewear">Eyewear Modeling</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="how-it-works.html">How It Works</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <a href="mailto:hello@virtualmodel.us">hello@virtualmodel.us</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 VirtualModel. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="LinkedIn">LI</a>
+                    <a href="#" aria-label="Twitter">X</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('formSuccess').style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

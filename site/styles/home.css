@@ -1,0 +1,227 @@
+/* ========================================
+   VirtualModel.us — Homepage Specific
+   ======================================== */
+
+/* === Hero Section === */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 72px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero .bg-orb-1 {
+    width: 600px;
+    height: 600px;
+    top: -200px;
+    right: -100px;
+}
+
+.hero .bg-orb-2 {
+    width: 400px;
+    height: 400px;
+    bottom: -100px;
+    left: -100px;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text {
+    max-width: 560px;
+}
+
+.hero-text h1 {
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+    line-height: 1.08;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 .gradient-text {
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-text>p {
+    color: var(--white-60);
+    font-size: 1.1rem;
+    margin-bottom: 32px;
+    max-width: 480px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 32px;
+}
+
+.hero-stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-stat strong {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--gold);
+}
+
+.hero-stat span {
+    font-size: 0.8rem;
+    color: var(--white-40);
+}
+
+.hero-visual {
+    position: relative;
+}
+
+/* === Problem Section === */
+.problem-section {
+    background: var(--bg-dark-2);
+}
+
+.problem-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.problem-text h2 {
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    margin-bottom: 16px;
+}
+
+.problem-text p {
+    color: var(--white-60);
+    font-size: 1rem;
+    margin-bottom: 24px;
+}
+
+.pain-points {
+    display: grid;
+    gap: 14px;
+}
+
+.pain-point {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 16px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+}
+
+.pain-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(239, 68, 68, 0.12);
+    color: #ef4444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.pain-point h4 {
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+}
+
+.pain-point p {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+/* === CTA Banner Section === */
+.cta-banner {
+    background: linear-gradient(135deg, rgba(201, 165, 90, 0.12), rgba(45, 212, 191, 0.08));
+    border: 1px solid var(--border-gold);
+    border-radius: var(--radius-xl);
+    padding: 64px 48px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-banner h2 {
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    margin-bottom: 16px;
+}
+
+.cta-banner p {
+    color: var(--white-60);
+    font-size: 1.05rem;
+    margin-bottom: 28px;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* === What We Serve (Services Grid) === */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* === Responsive === */
+@media (max-width: 1024px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .problem-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: auto;
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    .hero-stats {
+        gap: 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-banner {
+        padding: 40px 24px;
+    }
+}
