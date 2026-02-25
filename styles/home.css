@@ -185,6 +185,94 @@
     gap: 20px;
 }
 
+/* === Comparison Data Table === */
+.data-table-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+    margin-bottom: 28px;
+}
+
+.comparison-table thead th {
+    padding: 20px 24px;
+    text-align: left;
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--white);
+    background: rgba(0, 0, 0, 0.04);
+    border-bottom: 2px solid var(--border);
+}
+
+.comparison-table thead th.highlight-col {
+    background: linear-gradient(135deg, rgba(184, 146, 47, 0.12), rgba(184, 146, 47, 0.06));
+    color: var(--gold);
+}
+
+.comparison-table tbody td {
+    padding: 18px 24px;
+    font-size: 0.95rem;
+    color: var(--white-60);
+    border-bottom: 1px solid var(--border);
+}
+
+.comparison-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.comparison-table tbody td.highlight-col {
+    background: rgba(184, 146, 47, 0.04);
+    color: var(--gold);
+}
+
+.comparison-table tbody td.highlight-col strong {
+    color: var(--gold);
+}
+
+/* Market Insight Callout */
+.market-insight {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 24px 28px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-gold);
+    background: linear-gradient(135deg, rgba(184, 146, 47, 0.06), rgba(13, 148, 136, 0.03));
+}
+
+.market-insight .insight-icon {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.market-insight p {
+    color: var(--white-60);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.market-insight strong {
+    color: var(--white);
+}
+
+/* === Featured Showcase Grid === */
+.showcase-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
 /* === Responsive === */
 @media (max-width: 1024px) {
     .hero-content {
@@ -203,6 +291,10 @@
 
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .showcase-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -223,5 +315,20 @@
 
     .cta-banner {
         padding: 40px 24px;
+    }
+
+    .comparison-table thead th,
+    .comparison-table tbody td {
+        padding: 14px 16px;
+        font-size: 0.85rem;
+    }
+
+    .showcase-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .market-insight {
+        flex-direction: column;
+        gap: 12px;
     }
 }

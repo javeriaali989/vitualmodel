@@ -1,0 +1,9 @@
+# Robots.txt for VirtualModel.us
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://virtualmodel.us/sitemap.xml
+
+# Crawl-delay (optional, to be kind to crawlers)
+Crawl-delay: 1
